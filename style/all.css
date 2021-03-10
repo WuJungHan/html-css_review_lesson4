@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*如果是用bs4已有內建此段語法*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /*下block 去除底下img buttom px用*/
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  /*&:hover{}*/
+}
+
+/*用bs4加入以下兩個
+ul{
+  padding: 0;
+}
+
+ul,li{
+  list-style:none
+}*/
+body {
+  padding: 100px 0;
+  background: linear-gradient(20deg, #3d5493, #1aa2a0) fixed center center/100% 100%;
+  /*背景固定 背景置中 寬% 高%*/
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+}
+
+.introduction-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+.introduction-wrap > :first-child {
+  margin-right: -10%;
+}
+
+.introduction-wrap:nth-child(1) .introduction_content {
+  background: rgba(240, 174, 193, 0.8);
+  border-radius: 10px;
+  border: 3px solid #f0aec1;
+}
+
+.introduction-wrap:nth-child(2) .introduction_content {
+  background: rgba(42, 253, 208, 0.8);
+  border-radius: 10px;
+  border: 3px solid #2afdd0;
+}
+
+.introduction-wrap:nth-child(3) .introduction_content {
+  background: rgba(254, 201, 121, 0.8);
+  border-radius: 10px;
+  border: 3px solid #fec979;
+}
+
+.introduction-wrap:nth-child(4) .introduction_content {
+  background: rgba(149, 219, 214, 0.8);
+  border-radius: 10px;
+  border: 3px solid #95dbd6;
+}
+
+.introduction_pic {
+  width: 55%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.introduction_img {
+  width: 100%;
+}
+
+.introduction_content {
+  width: 55%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #fa8;
+  padding: 50px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.introduction_title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.introduction_text {
+  font-size: 20px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=all.css.map */
